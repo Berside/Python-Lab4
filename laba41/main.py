@@ -12,7 +12,7 @@ def handle_start(message):
 
 @bot.message_handler(commands=['/help'])
 def handle_help(message):
-    bot.reply_to(message, f' List of commands:' "\n" "/start - Greeting and introduction to the bot" "\n""/help - List of commands and assistant" "\n""/top - The best movies of all the time""\n" "Movie title - movie search" "\n")
+    bot.reply_to(message, f' List of commands:' "\n" "/start - Greeting and introduction to the bot" "\n""/help - List of commands and assistant" "\n""/top - The best movies of all the time""\n" "Movie name - displays all information about this movie (for a better search, it is better to specify the full name of the movie)" "\n")
 
 @bot.message_handler(commands=['/top'])
 def handle_top(message):
